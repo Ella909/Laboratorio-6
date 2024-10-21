@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Géneros más leídos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Literatura</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina1.html">Medios de lectura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pagina2.html">Géneros más leídos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina3.html">Editoriales famosas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2>Géneros Más Leídos</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFiccion">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFiccion" aria-expanded="true" aria-controls="collapseFiccion">
+                        Ficción
+                    </button>
+                </h2>
+                <div id="collapseFiccion" class="accordion-collapse collapse show" aria-labelledby="headingFiccion"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La ficción es un género literario que incluye historias inventadas o imaginativas. Se
+                        caracteriza por su narrativa creativa y puede abarcar subgéneros como la ciencia ficción, la
+                        fantasía, y más.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNoFiccion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNoFiccion" aria-expanded="false" aria-controls="collapseNoFiccion">
+                        No Ficción
+                    </button>
+                </h2>
+                <div id="collapseNoFiccion" class="accordion-collapse collapse" aria-labelledby="headingNoFiccion"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La no ficción es un género que se basa en hechos reales. Incluye biografías, ensayos, y
+                        reportajes, y busca informar o educar al lector sobre un tema específico.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFantasia">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFantasia" aria-expanded="false" aria-controls="collapseFantasia">
+                        Fantasía
+                    </button>
+                </h2>
+                <div id="collapseFantasia" class="accordion-collapse collapse" aria-labelledby="headingFantasia"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La fantasía es un género que utiliza elementos mágicos y sobrenaturales como parte de su
+                        narrativa. A menudo presenta mundos imaginarios y criaturas fantásticas.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="imagenes/ciencia-ficcion.webp" alt="Ciencia ficción" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="imagenes/no-ficcion.jpg" alt="No ficción" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="imagenes/fantasia.avif" alt="Fantasía" class="img-fluid">
+            </div>
+        </div>
+        <div class="mt-4">
+            <button class="btn btn-primary">Ver géneros</button>
+            <button class="btn btn-secondary">Explorar autores</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
